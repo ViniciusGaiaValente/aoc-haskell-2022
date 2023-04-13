@@ -1,0 +1,26 @@
+cabal-version:      2.4
+name:               aoc-haskell2022
+version:            0.1.0.0
+maintainer:         viniciusgaiavalente@gmail.com
+author:             ViniciusGaiaValente
+extra-source-files: CHANGELOG.md
+
+library
+    exposed-modules:
+        Elves
+        RockPaperScisors
+        Rucksacks
+
+    hs-source-dirs:   src
+    default-language: Haskell2010
+    build-depends:
+        base ^>=4.17.2.0,
+        split
+
+executable aoc-haskell2022
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    default-language: Haskell2010
+    build-depends:
+        base ^>=4.17.2.0,
+        aoc-haskell2022
